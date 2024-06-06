@@ -1,0 +1,204 @@
+body{
+  margin: 0;
+  background-color: rgb(149, 194, 209);
+}
+
+header{
+  width: 100%;
+  background-color: #363A6B;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header ul li a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn{
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #848bee;
+  color: rgb(149, 194, 209);
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.beneficios{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.dia{
+  display: flex;
+}
+
+
+h1{
+  color: #171a3d;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.beneficios p{
+  margin-right: 180px;
+  color: white;
+  font-size: 20px;
+}
+
+.main p{
+  color: white;
+  font-size: 20px;
+}
+
+.main{
+  margin: 150px 50px;
+
+}
+
+.logo{
+  display: flex;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 50;
+  color: #363A6B;
+  align-self: center;
+}
+
+.footer {
+  background: #171a3d;
+  padding: 30px 0;
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.footer-section.links h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  text-align:center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+}
+
+.footer-section.contact h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.footer-section.contact p{
+    font-size: 17px;
+}
+
+.footer .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 50;
+  margin-right: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 900px){
+  nav{
+    display: none;
+  }
+
+  .beneficios, .dia{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .beneficios p{
+    margin-right: 0px;
+  }
+
+  .main img{
+    margin-bottom: 50px;
+  }
+
+ .logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer img{
+   margin-bottom: 5px;
+  }  
+
+  .footer-section.contact{
+    display: none;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-section.links{
+    margin-left: 40px;
+  }
+}
